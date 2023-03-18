@@ -10,5 +10,4 @@ public class MySkyproSpringDemoApplication {
 
 		SpringApplication.run(MySkyproSpringDemoApplication.class, args);
 	}
-
 }
