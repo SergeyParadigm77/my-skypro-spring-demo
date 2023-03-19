@@ -4,24 +4,16 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class CalculatorServiceImpl implements CalculatorService {
-
-    public String welcome() {
-        return ("<b>Добро пожаловать в калькулятор!<b/>");
-        }
-    public String sumTwoDigits(Integer num1, Integer num2) {
-        int sum = num1 + num2;
-        return num1 + " + " + num2 + " = " + sum;
+    public Integer sumTwoDigits(Integer num1, Integer num2) {
+        return num1 + num2;
     }
-    public String differenceTwoDigits(Integer num1, Integer num2) {
-        int difference = num1 - num2;
-        return num1 + " - " + num2 + " = " + difference;
+    public Integer differenceTwoDigits(Integer num1, Integer num2) {
+        return num1 - num2;
     }
-    public String multiplyTwoDigits(Integer num1, Integer num2) {
-        int multiply = num1 * num2;
-        return num1 + " * " + num2 + " = " + multiply;
+    public Integer multiplyTwoDigits(Integer num1, Integer num2) {
+        return num1 * num2;
     }
-    public String divideTwoDigits(Integer num1, Integer num2) {
-        int divide = num1 / num2;
-        return num1 + " : " + num2 + " = " + divide;
+    public Integer divideTwoDigits(Integer num1, Integer num2) {
+       return num1 / num2;
     }
 }
